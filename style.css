@@ -6,7 +6,7 @@
 body {
     height: 100vh;
     width: 100vw;
-    background-color: rgb(41, 173, 173);
+    background-color: rgb(54, 153, 153);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,12 +41,13 @@ body {
     border-radius: 10px;
     border: none;
     padding-left: 10px;
+    font-size: 20px;
 }
-#form div input:valid {
-    background-color: rgb(129, 221, 129);
+#form div input:focus:valid {
+    outline: 3px solid rgb(26, 217, 26);
 }
-#form div input:invalid {
-    background-color: rgb(221, 141, 141);
+#form div input:focus:invalid {
+    outline: 3px solid rgb(216, 38, 38);
 }
 #form div span {
     height: 30px;
@@ -58,6 +59,6 @@ body {
     width: 250px;
     height: 30px;
     border-radius: 10px;
-    border: none;
+
 }
 
